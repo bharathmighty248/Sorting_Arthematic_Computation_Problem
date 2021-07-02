@@ -5,11 +5,10 @@ read -p "Enter 2nd num : " b
 read -p "Enter 3rd num : " c
 
 echo $a $b $c
-arthematic1=$(($a+$b*$c))
-echo $arthematic1
-arthematic2=$(($a*$b+$c))
-echo $arthematic2
-arthematic3=$(($c+$a/$b))
-echo $arthematic3
-arthematic4=$(($a%$b+$c))
-echo $arthematic4
+declare -A arthematic
+
+arthematic[1]=$(($a+$b*$c))
+arthematic[2]=$(($a*$b+$c))
+arthematic[3]=$(($c+$a/$b))
+arthematic[4]=$(($a%$b+$c))
+echo ${arthematic[@]}
