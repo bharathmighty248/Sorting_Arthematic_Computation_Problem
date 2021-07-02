@@ -22,4 +22,4 @@ echo ${arthematicArr[@]}
 for((i=0; i<${#arthematicArr[@]}; i++))
 do
 	echo "${arthematicArr[$i]}"
-done | sort -nr
+done | sort -n
