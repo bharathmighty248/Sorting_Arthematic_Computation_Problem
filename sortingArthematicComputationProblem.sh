@@ -9,3 +9,5 @@ arthematic1=$(($a+$b*$c))
 echo $arthematic1
 arthematic2=$(($a*$b+$c))
 echo $arthematic2
+arthematic3=$(($c+$a/$b))
+echo $arthematic3
