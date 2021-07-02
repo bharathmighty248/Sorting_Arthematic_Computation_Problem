@@ -10,7 +10,6 @@ arthematicDic[1]=$(($a+$b*$c))
 arthematicDic[2]=$(($a*$b+$c))
 arthematicDic[3]=$(($c+$a/$b))
 arthematicDic[4]=$(($a%$b+$c))
-echo ${arthematicDic[@]}
 
 counter=1
 for ((i=0; i<4; i++))
@@ -19,3 +18,8 @@ do
 done
 
 echo ${arthematicArr[@]}
+
+for((i=0; i<${#arthematicArr[@]}; i++))
+do
+	echo "${arthematicArr[$i]}"
+done | sort -nr
