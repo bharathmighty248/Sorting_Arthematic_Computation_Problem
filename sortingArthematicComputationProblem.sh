@@ -5,5 +5,7 @@ read -p "Enter 2nd num : " b
 read -p "Enter 3rd num : " c
 
 echo $a $b $c
-compute=$(($a+$b*$c))
-echo $compute
+arthematic1=$(($a+$b*$c))
+echo $arthematic1
+arthematic2=$(($a*$b+$c))
+echo $arthematic2
